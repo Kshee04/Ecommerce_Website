@@ -36,12 +36,12 @@
 						<div class="form-field">
 							<input class="form-control" type="text" name="state" placeholder="State..">
 						</div>
-						<div class="form-field">
-							<input class="form-control" type="text" name="zipcode" placeholder="Zip code..">
-						</div>
-						<div class="form-field">
-							<input class="form-control" type="text" name="country" placeholder="Zip code..">
-						</div>
+{#						<div class="form-field">#}
+{#							<input class="form-control" type="text" name="zipcode" placeholder="Zip code..">#}
+{#						</div>#}
+{#						<div class="form-field">#}
+{#							<input class="form-control" type="text" name="country" placeholder="Zip code..">#}
+{#						</div>#}
                </div>
                 <hr>
                 <input type="submit" value="Continue">
@@ -58,9 +58,9 @@
             <hr>
             <h3>Order Summary</h3>
             <div class="cart-row">
-					<div style="flex:2"><img class="row-image" src="{% static 'images/placeholder.png' %}"></div>
-					<div style="flex:2"><p>Product 1</p></div>
-					<div style="flex:1"><p>Ksh 20.00</p></div>
+					<div style="flex:2"><img class="row-image" src="{% static 'images/Duracoat-Superfast 20l.jpg' %}"></div>
+					<div style="flex:2"><p>{{ productId.name}}</p></div>
+					<div style="flex:1"><p>Ksh{{ productId.price }}</p></div>
 					<div style="flex:1"><p>x2</p></div>
 				</div>
             <h5>Items:2</h5>
